@@ -1,0 +1,378 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+* {
+  position: relative;
+  z-index: -1;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+  background-color: #facc00;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+.container {
+  display: grid;
+  column-count:3;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns:  1fr 4fr 1fr;
+
+}
+
+.sidebar {
+  color: white;
+}
+
+.sdb-right {
+  border-left: thin solid white;
+}
+
+.sdb-left {
+  border-right: thin solid white;
+}
+
+
+/* Styles for the banner image */
+/* Styles for the banner image */
+.banner {
+  /* Photo by mnm.a2ll on Unsplash */
+  background: url('https://www.aprendiendoarduino.com/wordpress/wp-content/uploads/2016/03/arduino-genuino.png');
+
+background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-size: 42rem;
+
+  padding: 8rem 4rem;
+  /* grid styles */
+
+}
+
+.banner > * {
+  color: blue;
+}
+
+.banner > h1 {
+  font-size: 7rem;
+  padding-bottom: 3rem;
+}
+
+.banner > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.banner > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* tarjeta styles */
+.tarjeta {
+  padding: 2rem;
+}
+
+.tarjeta > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.tarjeta > ul > li {
+  border: 2px solid #0dceb4;
+  border-radius: .5rem;
+  list-style-type: none;
+}
+
+.tarjeta > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.tarjeta > ul > li > figure > img {
+  width: 100%;
+}
+
+.tarjeta > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.tarjeta > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.tarjeta > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #black;
+}
+
+.tarjeta > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.recuadro {
+  padding: 2rem;
+}
+
+.recuadro > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+}
+
+.recuadro > ul > li {
+  border: 1px solid #0dceb4;
+  border-radius: .5rem;
+  list-style-type: none;
+}
+
+.recuadro > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.recuadro > ul > li > figure > img {
+  width: 100%;
+}
+
+.recuadro > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.recuadro > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.recuadro > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.recuadro > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.titulo {
+
+font-size: 1.2rem;
+background-color: #28989e;
+color: white;
+font-weight: bolder;
+text-align: center;
+text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+.Resumen {
+
+  display: block;
+  border: thin solid #d2a50d;
+  text-align: center;
+  background-color: #28989e;
+  padding: 0.1rem;
+  position: realtive;
+  font-weight: bolder;
+  color: white;
+}
+
+.Resumen > h3 {
+  background-color: #28989e;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.comp {
+  display: block;
+  border: thin solid #d2a50d;
+  text-align: center;
+  background-color: #white;
+  padding: 1rem;
+  position: realtive;
+  font-weight: bolder;
+  color: black;
+  font-size: 2rem;
+}
+
+/* sticky */
+
+.sticky {
+	background-color: #ffffff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 100;
+}
+
+.hidden { display: none; }
+.shown { display: block; }
+
+/* mobile selector */
+#mobile-selector {
+  display: none;
+  text-align: right;
+  padding: 0.25rem;
+}
+
+
+/* menu styles */
+#menu {
+  display: block;
+  list-style: none;
+  list-style: none;
+  border: thin solid #00b4f7;
+  padding: 0;
+  background-color: #28989e;
+  padding: 5px;
+  position: realtive;
+  z-index: 10;
+}
+
+#menu > li {
+    border: thin solid #ffffff;
+    display: inline-grid;
+}
+
+#menu > li:first-child  {
+  background-color: #1AC6B7;
+
+}
+
+#menu > li > a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bolder;
+
+
+}
+
+#menu > li:hover {
+  background-color:#005891;
+}
+
+.services {
+  padding: 1rem;
+}
+
+.services > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
+  grid-gap: 1rem;
+  padding-left: 0;
+}
+
+.services > ul > li {
+  list-style: none;
+  border: thin solid lightgray;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  box-shadow: 0.25rem 0.25rem 0.25rem lightgrey;
+  text-align: center;
+}
+
+.services > ul > li > figure > img {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.services > ul > li > a {
+  padding: 1rem;
+  float: right;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.services  > ul > li > .wstone {
+  color: black;
+  background-color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  #menu {
+   display: none;
+ }
+
+  #menu > li {
+      width: 100%;
+  }
+
+  .container {
+    display: inline;
+  }
+
+  .tarjeta {
+    padding: 1rem;
+  }
+
+  .tarjeta > ul {
+    padding: 0;
+  }
+
+  /* mobile selector */
+    #mobile-selector {
+      display: block;
+    }
+
+}
