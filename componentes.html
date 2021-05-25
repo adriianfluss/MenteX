@@ -16,8 +16,7 @@
 
   <ul id="menu">
     <li> <a href="index.html">Home</a> </li>
-    <li> <a href="#">Componentes</a> </li>
-    <li> <a href="seguimiento.html">Seguimiento</a> </li>
+    <li> <a href="#">Memoria</a> </li>
   </ul>
 </nav>
 
@@ -35,10 +34,20 @@
 
 
 
+      <section class="Comp">
 
-<section class="comp">
+        <h3>COMPONENTES</h3>
+
+       </section>
+
+<section class="mat" id="mat">
+  <ul>
+    <li>
 
 <h1>En primer lugar debemos investigar y saber de que se encarga cada componente del chasis del coche. Sin ese tipo de información es imposible llegar a realizar una buena programación.</h1>
+
+</ul>
+</li>
 
 </section>
 
@@ -50,18 +59,15 @@
         <img src="imagenes/36.png" alt="Motores">
         <figcaption><h3>Motores</h3></figcaption>
       </figure>
-      <p> Mente X es el nombre de nuestro proyecto y tendrá dos funciones:</p>
-    <p> -Se conectará por bluetooth a una aplicación del móvil y desde el nuestro telefono podremos manejarlo. </p>
-    <p> - El radar detectará los objetos que se encuentre en su camino. </p>
+      <p> Es un dispositivo electromecánico que te permite reducir la velocidad a un alto par. Estos 4 motores son los que van a permitir al coche arrancar y moverse.</p>
     </li>
     <li>
       <figure>
         <!-- Photo by Quentin Dr on Unsplash -->
-    <img src="imagenes/hs.png" alt="Arduino"/>
-        <figcaption><h3>Arduino IDE</h3></figcaption>
+    <img src="imagenes/90.png" alt="Arduino"/>
+        <figcaption><h3>Motor de 2 canales y placa de protección servo de 16 canales</h3></figcaption>
       </figure>
-      <p> Utilizaremos la aplicación de Arduino para llevar a cabo toda la programación tanto del coche como del radar.</p>
-      <p> El entorno de desarrollo integrado (IDE) de Arduino es una aplicación multiplataforma (para Windows, macOS, Linux ) que está escrita en el lenguaje de programación Java. Se utiliza para escribir y cargar programas en placas compatibles con Arduino </p>
+      <p> Esta placa se conecta sobre la placa Arduino, en ella conectamos los motores además del servo.</p>
     </li>
     <li>
       <figure>
@@ -74,22 +80,99 @@
     </li>
     <li>
       <figure>
-        <!-- Photo by Quentin Dr on Unsplash -->
-        <img src="imagenes/28.png" alt="Apache">
-        <figcaption><h3>Atom</h3></figcaption>
-      </figure>
-      <p> Atom es un editor de código fuente libre y de código abierto  para macOS, Linux, y Microsoft Windows. Es una aplicación de escritorio basada en tecnologías web. Es el que estamos utilizando para realizar la página web.</p>
-    </li>
-    <li>
-      <figure>
         <!-- Photo by Drew Farwell on Unsplash -->
         <img src="imagenes/29.png" alt="PHP">
         <figcaption><h3>Sensor HC-SR04</h3></figcaption>
       </figure>
-      <p> El HC-SR04 es un sensor ultrasónico que mide la distancia con ondas de ultrasonido. Utiliza el mismo principio que un sonar que envía una onda de sonido y mide el tiempo entre la transmisión y la recepción de su eco. Va conectado a la placa arduino y es el que vamos a utilizar para que detecte los objetos. </p>
+      <p> El HC-SR04 es un sensor ultrasónico que mide la distancia con ondas de ultrasonido. Va conectado a la placa arduino y es el que vamos a utilizar para que detecte los objetos. </p>
     </li>
   </ul>
 </section>
+
+
+<section class="Segui">
+
+  <h3>SEGUIMIENTO</h3>
+
+ </section>
+
+ <section class="Hola">
+
+ <h1>Estrategia</h1>
+
+</section>
+
+<section class="Adios">
+
+ <p> La estrategia que tenemos pensada seguir es montar el coche lo antes posible y comprobar su funcionalidad, una vez montado y comprobado que los motores y los sensores funcionan correctamente, empezar a introducir los códigos al coche e ir modificandolos para conseguir el objetivo de nuestro proyecto. </p>
+
+</section>
+
+<section class="Hola">
+
+ <h1> Definición de las tareas</h1>
+
+ </section>
+
+ <section class="Adios">
+
+ <p> Lo primero a realizar como hemos dicho en el otro apartado es buscar información de cada uno de los componentes del chasis del coche, una vez sepamos de la función de cada uno de estos tenemos que empezar con el montaje, fijándonos en un video de youtube y procurando montarlo igual sin ningún error ya que con un simple cable mal conectado el coche dejará de funcionar.<p>
+
+ <p>Una vez montado, se tiene que programar y para ello tenemos que entender algo de programación y de cómo funciona el programa Arduino IDE, para ello hemos buscado diferentes códigos y que estén explicados bloque por bloque para saber qué función realiza cada uno.
+ Por lo tanto debemos introducir el código más completo y que más se asemeje al objetivo que estamos buscando y desde el código base ir cambiándolo hasta que nos parezca correcto.<p>
+
+ <p>Todo esto en el caso de que no nos de nada ningún problema, para ello hemos ido haciendo las siguientes pruebas paso por paso y solucionando cada uno de los problemas que nos a ido surgiendo.</p>
+
+<img src="imagenes/92.png" width="400" alt="Arduino"/>
+
+</section>
+
+<section class="Hola">
+
+ <h1> Prueba 1 </h1>
+
+ </section>
+
+ <section class="Adios">
+
+ <p>Después de terminar con todo el montaje del coche, lo primero que hicimos fue comprobar si el coche se encendía (batería, sensores, placa), también le metimos un código desde el Arduino IDE para comprobar si el coche arrancaba.</p>
+
+ <p>Cuando lo terminamos de montar vimos que todo se encendía correctamente, pero los motores no arrancaban, entonces le metimos el código a la placa Arduino, pero daba un error y no dejaba subir el código. </p>
+
+</section>
+
+<section class="Hola">
+
+ <h1> Prueba 2 </h1>
+
+ </section>
+
+ <section class="Adios">
+
+ <p> Como el coche no arrancaba tuvimos que desmontarlo todo otra vez para comprobar que estaba bien montado y conectado correctamente. También hicimos una prueba de los motores por si acaso para comprobar si ese era el problema.</p>
+
+ <p> Una vez comprobado todo lo anterior y demostrado que los motores funcionaban correctamente lo volvimos a montar pero el coche seguía sin funcionar.</p>
+
+ <p> Sacamos la conclusión de que el problema era de la placa ya que no nos dejaba meter el código, por lo tanto era evidente que el coche no arrancará.</p>
+
+ </section>
+
+<section class="Hola">
+
+ <h1> Prueba 3 </h1>
+
+ </section>
+
+ <section class="Adios">
+
+ <p> Lo último que hicimos después de buscar información por internet fue actualizar la placa arduino, ya que no estaba en su última versión y no tenía los drivers necesarios. Volvimos a meter un código de prueba en la placa y ya lo aceptaba. </p>
+
+ <p> Entonces ya metimos los códigos buenos, el del radar para que detectara los objetos que tenía a menos de 1 metro, el del bluetooth para que dejara conectar el coche con el móvil y el de movimiento para que dejara controlarlo desde la aplicación del móvil. </p>
+
+ <p> Entonces ya fue cuando el coche arrancaba y cumplía con todas sus funciones. </p>
+
+ </section>
+
 <section class="sidebar sdb-right">
 
 </section>

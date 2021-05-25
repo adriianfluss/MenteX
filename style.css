@@ -200,6 +200,20 @@ background-repeat: no-repeat;
   margin: .5rem;
 }
 
+.Hola {
+  font-size: 2.3rem;
+  margin: .5rem;
+  background-color: #f0c124;
+  font-family: sans-serif;
+  font-weight: 400;
+  display: ruby;
+
+}
+
+.Adios {
+  font-size: 1.1rem;
+}
+
 .titulo {
 
 font-size: 1.2rem;
@@ -208,6 +222,11 @@ color: white;
 font-weight: bolder;
 text-align: center;
 text-shadow: 2px 2px 4px #000000;
+}
+
+.mat {
+ font-size: 1.2rem;
+
 }
 
 
@@ -259,6 +278,100 @@ footer {
 	top: 0;
   z-index: 100;
 }
+
+.mat {
+  padding: 0.5rem;
+  text-align: center;
+
+
+}
+
+.mat > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+}
+
+.mat > ul > li {
+  border: 10px solid #28989e;
+  border-radius: .8rem;
+  list-style-type: none;
+  background-color: #f0c124;
+}
+
+.mat > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.mat > ul > li > figure > img {
+  width: 100%;
+}
+
+.mat > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.mat > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.mat > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.mat > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.Segui {
+
+  display: block;
+  border: thin solid #d2a50d;
+  text-align: center;
+  background-color: #28989e;
+  padding: 0.1rem;
+  position: realtive;
+  font-weight: bolder;
+  color: white;
+}
+
+.Segui > h3 {
+  background-color: #28989e;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.Comp {
+
+  display: block;
+  border: thin solid #d2a50d;
+  text-align: center;
+  background-color: #28989e;
+  padding: 0.1rem;
+  position: realtive;
+  font-weight: bolder;
+  color: white;
+}
+
+.Comp > h3 {
+  background-color: #28989e;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 
 .hidden { display: none; }
 .shown { display: block; }
