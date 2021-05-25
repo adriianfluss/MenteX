@@ -212,6 +212,10 @@ background-repeat: no-repeat;
 
 .Adios {
   font-size: 1.1rem;
+  border: 3px solid #28989e;
+  border-radius: .3rem;
+  list-style-type: none;
+  background-color: white;
 }
 
 .titulo {
